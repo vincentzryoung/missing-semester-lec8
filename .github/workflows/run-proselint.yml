@@ -16,4 +16,4 @@ jobs:
 
       - name: Just run proselint
         shell: bash
-        run: proselint README.md
+        run: python -m proselint README.md
