@@ -15,4 +15,7 @@ jobs:
         shell: bash
         run: | 
           python -m pip install --upgrade pip proselint
+          which proselint
+          ls *.md
+          tree
           proselint *.md
