@@ -1,0 +1,9 @@
+on: [push]
+
+jobs:
+  proselint:
+    runs-on: ubuntu-latest
+    name: Proselint action
+    steps:
+      - name: Just run proselint
+        run: proselint *.md
