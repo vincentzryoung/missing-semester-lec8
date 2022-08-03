@@ -16,9 +16,9 @@ jobs:
       - name: Setup and run proselint
         shell: bash
         run: | 
-          python -m pip install --upgrade pip
-          pip install proselint
+          python3 -m pip install --upgrade pip
+          python3 -m pip install proselint
           which proselint
           ls *.md
           tree
-          proselint *.md
+          python3 -m proselint README.md
