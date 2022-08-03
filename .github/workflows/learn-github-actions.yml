@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - master
+      - main
 
 name: 'Trigger: Push action'
 
@@ -12,4 +12,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run ShellCheck
-      uses: vincentzryoung/missing-semester-lec8@master
+      uses: vincentzryoung/missing-semester-lec8@main
