@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@main
 
       - name: Setup python
-        run: actions/setup-python@v1
+        uses: actions/setup-python@v1
 
       - name: Setup proselint
         run: pip install proselint
