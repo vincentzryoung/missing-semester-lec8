@@ -3,7 +3,14 @@ on: [push]
 jobs:
   proselint:
     runs-on: ubuntu-latest
-    name: Proselint action
+    name: Proselint automation
     steps:
+      - name: Checkout
+        uses: actions/checkout@main
+
+
+      - name: Setup proselint
+        run: pip install proselint
+
       - name: Just run proselint
         run: proselint *.md
