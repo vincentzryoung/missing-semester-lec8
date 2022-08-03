@@ -6,14 +6,13 @@ jobs:
     name: Proselint automation
     steps:
       - name: Checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@v3
 
       - name: Setup python
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v4
 
-      - name: Setup proselint
-        run: pip install --user proselint
-
-      - name: Just run proselint
+      - name: Setup and run proselint
         shell: bash
-        run: python -m proselint README.md
+        run: | 
+          python -m pip install --upgrade pip proselint
+          proselint *.md
