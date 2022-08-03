@@ -14,7 +14,6 @@ jobs:
             python-version: 3.x
 
       - name: Setup and run proselint
-        shell: bash
         run: | 
           python3 -m pip install --upgrade pip
           python3 -m pip install proselint
